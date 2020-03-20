@@ -11,7 +11,7 @@ class LoadGame extends Scene {
    * create
    */
   public create() {
-    console.log('Hello from Loading Scene');
+    console.log('1. Loading Game ');
     this.scene.add(CST.SCENES.MENU, MainMenu, false);
     this.scene.start(CST.SCENES.MENU);
   }
