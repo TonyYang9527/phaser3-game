@@ -17,7 +17,7 @@ const game = new Game({
     //     plugin: RexUIPlugin,
     //     mapping: 'rexUI'
     // }]
-  },
+  }
 });
 
 function resize() {

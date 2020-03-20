@@ -16,8 +16,7 @@ class MainMenu extends Phaser.Scene {
     // this.scene.add(CST.SCENES.GAME, MainGame, false);
     // this.scene.start(CST.SCENES.GAME);
 
-    
-    // load demo 
+    // load demo
     this.scene.add(CST.SCENES.DOME, UIDome, false);
     this.scene.start(CST.SCENES.DOME);
   }
