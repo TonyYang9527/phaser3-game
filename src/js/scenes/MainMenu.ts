@@ -3,7 +3,6 @@ import { CST } from '../constants';
 import MainGame from './MainGame';
 
 class MainMenu extends Phaser.Scene {
-  
   constructor() {
     super({ key: CST.SCENES.MENU });
   }
