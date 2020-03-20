@@ -31,6 +31,9 @@ build/
 local.properties
 *.iml
 
+# cache
+#
+dist/
 
 # cache
 #
