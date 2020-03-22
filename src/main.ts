@@ -1,6 +1,5 @@
 import { Game } from 'phaser';
 import LoadGame from './scenes/LoadGame';
-//import RexUIPlugin from 'phaser3-rex-plugins/templates/ui/ui-plugin.js';
 
 const game = new Game({
   width: 640,
@@ -9,15 +8,7 @@ const game = new Game({
   disableContextMenu: true,
   scene: [LoadGame],
   title: 'Treasure Hunt',
-  parent: 'game',
-
-  plugins: {
-    // scene: [{
-    //     key: 'rexUI',
-    //     plugin: RexUIPlugin,
-    //     mapping: 'rexUI'
-    // }]
-  }
+  parent: 'game'
 });
 
 function resize() {

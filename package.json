@@ -1,8 +1,8 @@
 {
   "name": "flappy-bird",
   "scripts": {
-    "start": "parcel ./src/index.html --open",
-    "build": "parcel build src/index.html",
+    "start": "parcel index.html --open --no-cache",
+    "build": "parcel build index.html --no-cache",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint:fix": "tslint -c tslint.json --fix 'src/**/*.ts'",
     "prettier:base": "prettier --parser typescript --single-quote",
@@ -12,11 +12,12 @@
   "license": "MIT",
   "version": "1.1.0",
   "devDependencies": {
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
     "cssnano": "^4.1.10",
     "husky": "^4.2.3",
     "node-sass": "^4.13.1",
-    "prettier": "1.19.1",
-    "ts-loader": "^6.2.1",
+    "prettier": "2.0.1",
     "tslint": "^6.1.0",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.8.3"
@@ -24,9 +25,11 @@
   "dependencies": {
     "lodash": "^4.17.15",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-typescript": "^1.0.0",
     "phaser": "^3.22.0",
-    "phaser3-rex-plugins": "^1.1.8",
-    "src": "^1.1.2"
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "utils": "^0.3.1"
   },
   "husky": {
     "hooks": {

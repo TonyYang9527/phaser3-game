@@ -1,5 +1,5 @@
 import { Scene } from 'phaser';
-import { CST } from '../constants';
+import { CST } from '../utils/constants';
 import MainMenu from './MainMenu';
 
 class LoadGame extends Scene {
@@ -11,7 +11,7 @@ class LoadGame extends Scene {
    * create
    */
   public create() {
-    console.log('1. Loading Game ');
+    console.log('Hello from Loading Scene');
     this.scene.add(CST.SCENES.MENU, MainMenu, false);
     this.scene.start(CST.SCENES.MENU);
   }

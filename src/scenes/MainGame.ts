@@ -1,6 +1,6 @@
 import { Scene, GameObjects, Actions, Geom, Types } from 'phaser';
-import { CST } from '../constants';
-import Images from '../images';
+import { CST } from '../utils/constants';
+import Images from '../utils/images';
 
 class MainGame extends Scene {
   public playerSpeed: number;
